@@ -1,0 +1,107 @@
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Container */
+#registration-form,
+#simple-footer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    max-width: 30em;
+    margin-inline: auto;
+    text-align: center;
+}
+
+#simple-footer {
+    margin-top: 2em;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: 555;
+}
+
+#registration-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+label {
+    font-weight: 555;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Form Inputs */
+input {
+    width: 80%;
+    padding: 1em;
+    margin-block: 1em 2em;
+
+
+    border: 2px solid #ccc;
+    background-color: rgb(215, 223, 238);
+    border-radius: 5px;
+}
+
+
+/* BUTTS */
+.buttBar {
+    padding: 1em;
+    margin-block: 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    gap: 1em;
+}
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Reset Button */
+button.reset {
+    background-color: #dc3545;
+}
+
+button.reset:hover {
+    background-color: #a71d2a;
+}
+
+
+@media (max-width: 900px) {
+    .buttBar {
+        flex-direction: column;
+    }
+
+    .buttBar button {
+        flex: 1 1 0;
+        margin-bottom: .25em;
+    }
+}
